@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.start');
 });
 
 Auth::routes();
@@ -21,3 +21,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/test','NavController@test');
 Route::get('/start','NavController@start');
+
