@@ -22,3 +22,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/test','NavController@test');
 Route::get('/start','NavController@start');
 
+
+Route::resource('/menu','MenuController');
